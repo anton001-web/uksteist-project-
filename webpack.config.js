@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
 const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
@@ -56,6 +57,15 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: `./styles/${filename('css')}`
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, './src/assets/images'),
+                    to: path.resolve(__dirname, './dist/assets/images'),
+                },
+
+            ]
         })
     ],
     devServer: {
