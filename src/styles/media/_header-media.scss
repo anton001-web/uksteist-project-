@@ -1,0 +1,43 @@
+@media screen and (max-width: 767px) {
+  .list_block {
+    align-items: start;
+    background-color: #fff;
+    position: fixed;
+    justify-content: start;
+    top: 90px;
+    left: -120%;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .header_down {
+    border: none;
+  }
+
+  .header_list {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .headerList__item {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .hidden_desktop {
+    display: block;
+  }
+  
+  .burger_toggle {
+    display: block;
+  }
+  
+  .settings {
+    display: none;
+  }
+
+  .header__social {
+    display: none;
+  }
+}
