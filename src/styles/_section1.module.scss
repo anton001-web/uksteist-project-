@@ -1,0 +1,92 @@
+.section {
+  margin-top: 150px;
+}
+
+.section_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.eleven {
+
+}
+
+.sectionInfo_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.section_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.section_title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 64px;
+  line-height: 90%;
+  letter-spacing: 0.0703846px;
+  color: #1D1F1D;
+  mix-blend-mode: normal;
+}
+
+.section_subTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+.areas_btn {
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 90%;
+  letter-spacing: 0.0703846px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #1D1F1D;
+  border-radius: 30px;
+  padding: 25px 45px;
+
+  &:hover {
+    background: #314C51;
+    color: rgba(255, 255, 255, .8);
+  }
+}
+
+.eleven {
+  display: flex;
+
+}
+
+.one {
+  width: 250px;
+  height: 600px;
+  background-image: url("../assets/images/forest.jpg");
+  background-size: cover;
+  clip-path: polygon(56% 89%, 100% 89%, 100% 0, 63% 0%, 15% 0, 15% 18%, 56% 18%);
+  animation: anim 90s linear infinite;
+
+}
+
+@keyframes anim {
+  0% {background-position: 0px;}
+  100% {background-position: 5440px}
+}
+
+
+@import './media/_section1-media';

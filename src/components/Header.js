@@ -3,10 +3,22 @@ import s from '../styles/_header.module.scss'
 import {useDispatch, useSelector} from "react-redux";
 import classNames from "classnames";
 import {toggleBurger} from "../redux/actions";
+import Select from "react-select/base";
+
+const languagesOpt = [{
+    value: 'ru',
+    label: 'Ru'
+}, {
+    value: 'eng',
+    label: 'Eng'
+}
+]
+
 
 const Header = () => {
     const dispatch = useDispatch()
     const menuRef = React.createRef()
+    const burgerBtn = React.createRef()
 
     const handleBurger = () => {
         dispatch(toggleBurger())
@@ -20,8 +32,11 @@ const Header = () => {
     useEffect(() => {
         if(visible) {
             menuRef.current.style.left = '0'
+            burgerBtn.current.classList.add(s.active)
+
         } else {
             menuRef.current.style.left = '-120%'
+            burgerBtn.current.classList.remove(s.active)
         }
     }, [visible])
 
@@ -38,16 +53,25 @@ const Header = () => {
                     </div>
                     <div className={s.settings}>
                         <img src="./assets/images/phone.png" alt="call" className={s.call}/>
+                        <Select options={languagesOpt}/>
                     </div>
-                    <button className={s.burger_toggle} onClick={handleBurger}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <button className={s.burger_toggle} onClick={handleBurger} ref={burgerBtn}>
+                        <span className={s.bar}></span>
+                        <span className={s.bar}></span>
+                        <span className={s.bar}></span>
                     </button>
                 </div>
                 <div className={s.header_down}>
                     <div className={s.list_block} ref={menuRef}>
                         <ul className={s.header_list}>
+                            <div className={s.burgerHeader}>
+                                <img src="./assets/images/logo.png" alt="logo" className={s.logo}/>
+                                <button className={s.burger_toggle} onClick={handleBurger} ref={burgerBtn}>
+                                    <span className={s.bar}></span>
+                                    <span className={s.bar}></span>
+                                    <span className={s.bar}></span>
+                                </button>
+                            </div>
                             <li className={s.headerList__item}>Участки</li>
                             <li className={s.headerList__item}>Место</li>
                             <li className={s.headerList__item}>История</li>

@@ -1,0 +1,30 @@
+@media screen and (max-width: 968px) {
+  .one {
+    width: 200px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .one {
+    width: 160px;
+    height: 500px;
+  }
+
+  .section_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eleven {
+    margin-right: 30px;
+  }
+
+  .section_info {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -4,11 +4,10 @@
     background-color: #fff;
     position: fixed;
     justify-content: start;
-    top: 90px;
+    top: 0;
     left: -120%;
     height: 100%;
     width: 100%;
-    z-index: 9999;
   }
   
   .header_down {
@@ -18,6 +17,7 @@
   .header_list {
     align-items: start;
     flex-direction: column;
+    width: 100%;
   }
 
   .headerList__item {
@@ -30,7 +30,7 @@
   }
   
   .burger_toggle {
-    display: block;
+    display: flex;
   }
   
   .settings {

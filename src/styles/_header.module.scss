@@ -33,6 +33,13 @@
   justify-content: center;
   align-items: center;
   transition: all .3s;
+  z-index: 9999;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header_list {
@@ -49,6 +56,7 @@
 
 .call {
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .logo {
@@ -105,14 +113,42 @@
   outline: none;
   background-color: #fff;
   display: none;
-  
+  flex-direction: column;
+
   span {
     height: 2px;
     width: 20px;
     background-color: #000;
     display: block;
+    transition: all .3s;
     margin: 4px;
   }
 }
+
+.active {
+  .bar:nth-child(3) {
+    display: none;
+  }
+  .bar:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+
+  }
+  .bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
+}
+
+.burgerHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  align-items: center;
+  
+  button {
+    margin: 0px 40px 15px 0px;
+  }
+}
+
 
 @import './media/_header-media';
