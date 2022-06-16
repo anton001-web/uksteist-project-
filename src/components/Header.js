@@ -53,7 +53,6 @@ const Header = () => {
                     </div>
                     <div className={s.settings}>
                         <img src="./assets/images/phone.png" alt="call" className={s.call}/>
-                        <Select options={languagesOpt}/>
                     </div>
                     <button className={s.burger_toggle} onClick={handleBurger} ref={burgerBtn}>
                         <span className={s.bar}></span>
