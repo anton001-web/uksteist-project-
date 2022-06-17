@@ -1,14 +1,10 @@
 .section {
-  position: absolute;
-  right: 0;
-  left: 0;
+
 }
 
 .section_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
 }
 
 //section info area
@@ -16,6 +12,10 @@
 
 .section_areas {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 .areas_item {
@@ -49,10 +49,10 @@
 //second block styles
 
 .section_seaInfo {
-  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .seaInfo {
@@ -83,40 +83,44 @@
 //section houses styles
 
 .section_houses {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+  height: 1000px;
 }
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.houses_container.active div{
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .houses_block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  background-image: url("../assets/images/bg-svg.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
 
-  .house {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    background: rgba(0, 0, 0, 0.1);
-    padding: 20px;
 
-    //text
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 120%;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #000;
+
+  [data-area] {
+    cursor: pointer;
+    opacity: .2;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
   }
-
 }
+
+////////
+
+//tooltip
+
+
 
 ////////
 
