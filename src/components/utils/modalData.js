@@ -5,7 +5,7 @@ export const modalData = [
         houseArea: '200 м2',
         address: 'Vainu tee 1',
         price: '150000',
-        id: 1
+        id: '1'
     },
     {
         taken: 'Свободен',
@@ -13,7 +13,7 @@ export const modalData = [
         houseArea: '250 м2',
         address: 'Vainu tee 2',
         price: '250000',
-        id: 2
+        id: '2'
     },
     {
         taken: 'Свободен',
@@ -21,7 +21,7 @@ export const modalData = [
         houseArea: '300 м2',
         address: 'Vainu tee 3',
         price: '190000',
-        id: 3
+        id: '3'
     },
     {
         taken: 'Свободен',
@@ -29,7 +29,7 @@ export const modalData = [
         houseArea: '350 м2',
         address: 'Vainu tee 4',
         price: '220000',
-        id: 4
+        id: '4'
     },
     {
         taken: 'Свободен',
@@ -37,7 +37,7 @@ export const modalData = [
         houseArea: '270 м2',
         address: 'Vainu tee 5',
         price: '220000',
-        id: 5
+        id: '5'
     },
     {
         taken: 'Свободен',
@@ -45,7 +45,7 @@ export const modalData = [
         houseArea: '330 м2',
         address: 'Vainu tee 6',
         price: '240000',
-        id: 6
+        id: '6'
     },
     {
         taken: 'Свободен',
@@ -53,7 +53,7 @@ export const modalData = [
         houseArea: '320 м2',
         address: 'Vainu tee 7',
         price: '210000',
-        id: 7
+        id: '7'
     },
     {
         taken: 'Свободен',
@@ -61,7 +61,7 @@ export const modalData = [
         houseArea: '330 м2',
         address: 'Vainu tee 8',
         price: '250000',
-        id: 8
+        id: '8'
     },
     {
         taken: 'Свободен',
@@ -69,7 +69,7 @@ export const modalData = [
         houseArea: '340 м2',
         address: 'Vainu tee 9',
         price: '260000',
-        id: 9
+        id: '9'
     },
     {
         taken: 'Свободен',
@@ -77,7 +77,7 @@ export const modalData = [
         houseArea: '240 м2',
         address: 'Vainu tee 10',
         price: '240000',
-        id: 10
+        id: '10'
     },
     {
         taken: 'Свободен',
@@ -85,6 +85,6 @@ export const modalData = [
         houseArea: '350 м2',
         address: 'Vainu tee 11',
         price: '260000',
-        id: 11
+        id: '11'
     },
 ]
