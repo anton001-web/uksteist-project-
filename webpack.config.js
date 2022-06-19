@@ -14,7 +14,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: `./js/main/${filename('js')}`,
-        clean: true
+        clean: true,
     },
     module: {
         rules: [
@@ -39,15 +39,19 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff|woff2|ttf)$/,
-                exclude: /node_modules/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: `assets/fonts/${filename('[ext]')}`
-                    }
-                }]
-            }
+                test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
+                type: isDev ? 'asset/resource' : 'asset',
+                generator: {
+                    filename: 'assets/cssImages/[hash][ext]'
+                }
+            },
+            {
+                test: /\.(woff2?|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[hash][ext]'
+                }
+            },
         ]
     },
     plugins: [

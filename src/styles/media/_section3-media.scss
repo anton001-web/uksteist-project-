@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px) {
+  .section_info {
+    grid-template-columns: 1fr;
+  }
+
+  .section_data {
+    padding-left: 0;
+  }
+}

@@ -6,9 +6,8 @@ export const toggleBurger = () => {
     }
 }
 
-export const openModal = (modalData) => {
+export const openModal = () => {
     return {
-        type: OPEN_MODAL,
-        payload: modalData
+        type: OPEN_MODAL
     }
 }

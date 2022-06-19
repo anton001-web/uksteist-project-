@@ -6,6 +6,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    margin-top: 0;
+  }
+
   .one {
     width: 160px;
     height: 500px;

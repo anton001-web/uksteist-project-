@@ -11,10 +11,10 @@ const containerStyles = {
 
 const App = () => {
     return (
-        <div style={containerStyles}>
+        <>
             <Header />
             <Main />
-        </div>
+        </>
     )
 }
 

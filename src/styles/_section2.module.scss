@@ -1,5 +1,4 @@
 .section {
-
 }
 
 
@@ -85,9 +84,7 @@
 .houses_block {
   background-image: url("../assets/images/bg-svg.png");
   background-size: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
+
 
   [data-house] {
     z-index: 500;

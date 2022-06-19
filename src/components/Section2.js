@@ -10,6 +10,12 @@ const areasInfo = [
 
 const Section2 = () => {
     const tooltipRef = React.createRef()
+    const body = document.body
+    body.addEventListener('click', (e) => {
+        if(!e.target.dataset.area) {
+            tooltipRef.current.style.display = 'none'
+        }
+    })
 
     const fillTooltip = (tooltipData) => {
         tooltipRef.current.innerHTML = `
@@ -36,13 +42,9 @@ const Section2 = () => {
             tooltipRef.current.style.left = `${e.pageX - 120}px`
             tooltipRef.current.style.display = 'block'
         } else {
-            return null
+            tooltipRef.current.style.display = 'none'
         }
     }
-
-    useEffect(() => {
-
-    }, [])
 
     return (
         <section className={s.section}>
