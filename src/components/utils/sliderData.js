@@ -1,3 +1,15 @@
 export const sliderData = [
-    {img: './assets/images/'}
+    {img: './assets/images/sliderEnter.png', title: 'Новые дороги', subTitle: 'Дороги'},
+    {img: './assets/images/sliderEnter.png', title: 'Уличное освещение', subTitle: 'Освещение'},
+    {img: './assets/images/sliderEnter.png', title: 'Маяк', subTitle: 'Маяк'},
+    {img: './assets/images/sliderEnter.png', title: 'Забор', subTitle: 'Забор'},
+    {img: './assets/images/sliderEnter.png', title: 'Общая зона', subTitle: 'Зона общая'},
+    {img: './assets/images/sliderEnter.png', title: 'Скамейки с крышей', subTitle: 'Скамейки'},
+    {img: './assets/images/sliderEnter.png', title: 'Дорожка', subTitle: 'Дорожка'},
+    {img: './assets/images/sliderEnter.png', title: 'Детская площадка', subTitle: 'Площадка'},
+    {img: './assets/images/sliderEnter.png', title: 'Песочница', subTitle: 'Песочница'},
+    {img: './assets/images/sliderEnter.png', title: 'Входная группа', subTitle: 'Входная группа'},
+    {img: './assets/images/sliderEnter.png', title: 'Комунникации', subTitle: 'Комунникации'},
+    {img: './assets/images/sliderEnter.png', title: 'Лес', subTitle: 'Лес'},
+    {img: './assets/images/sliderEnter.png', title: 'Ваш участок земли', subTitle: 'Участок земли'},
 ]
