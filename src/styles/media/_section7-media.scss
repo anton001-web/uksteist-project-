@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+  .stages {
+    flex-direction: column;
+  }
+
+  p[data-start] {
+    bottom: 100px;
+  }
+
+  p[data-end] {
+    top: 15px;
+  }
+
+
+  .sectionTitle_block {
+    padding-bottom: 100px;
+  }
+
+
+  .stages::before {
+    width: 2px;
+    height: 33%;
+    top: 0;
+    left: 19px;
+  }
+
+  .stages::after {
+    width: 2px;
+    height: 75%;
+    top: 0;
+    left: 19px;
+  }
+
+  .stage::before {
+    top: 0;
+  }
+
+  .inner_stage {
+    left: 19px;
+    flex-direction: column;
+    width: 0;
+    height: calc(100%);
+  }
+
+  .stage_title {
+    top: -88px;
+    left: 70px;
+
+
+    &[data-title] {
+      top: -55px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section_content {
+    padding: 10px;
+  }
+}

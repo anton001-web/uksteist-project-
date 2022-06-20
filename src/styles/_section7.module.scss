@@ -1,0 +1,173 @@
+ul {
+  padding-inline-start: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.section {
+  margin-top: var(--section-m);
+}
+
+.section_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section_content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle_block {
+  display: flex;
+  flex-direction: column;
+
+  .section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 78px;
+    color: #1D1F1D;
+    margin-block-end: 0;
+  }
+
+  .section_subTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 155%;
+    color: #1D1F1D;
+  }
+}
+
+.stages {
+  display: flex;
+  max-width: 1100px;
+  position: relative;
+  counter-reset: section;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: #314C51;
+    height: 2px;
+    width: 36%;
+    top: 50%;
+    z-index: 3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: #C4C4C4;
+    height: 2px;
+    width: 77%;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+  }
+
+  .stage {
+    flex: 1 1 20rem;
+    position: relative;
+    list-style-type: none;
+  }
+}
+
+.inner_stage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(100% - 40px);
+  align-items: center;
+  left: 40px;
+  z-index: 5;
+
+  .stage_stages {
+    margin-top: 1px;
+    width: 11px;
+    height: 11px;
+    background: #314C51;
+    list-style: none;
+    border-radius: 50%;
+
+  }
+}
+
+.stage::before {
+  counter-increment: section;
+  content: counter(section);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F8F8F8;
+  width: 40px;
+  height: 40px;
+  background: #314C51;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage_subTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 70px;
+  width: fit-content;
+  right: 5px;
+
+  .start_date {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #858685;
+  }
+
+  .percentStart {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1D1F1D;
+  }
+}
+
+.stage_title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1D1F1D;
+  position: relative;
+  top: 40px;
+
+  &[data-title] {
+    top: 77.5px;
+  }
+}
+
+
+@import './media/_section7-media';
