@@ -1,11 +1,11 @@
 .section {
-  margin-top: 150px;
+  margin-top: var(--section-m);
 }
 
 .section_container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 30px;
+  padding: var(--padding-default);
 }
 
 .section_content {
@@ -32,7 +32,7 @@
   font-size: 64px;
   line-height: 90%;
   letter-spacing: 0.0703846px;
-  color: #1D1F1D;
+  color: var(--text-default);
 }
 
 .section_info {
@@ -44,10 +44,11 @@
 .section_data {
   display: flex;
   justify-content: start;
-  padding-left: 40px;
+  padding-left: var(--padding-default);
   align-items: center;
 
   .section_list {
+    padding-inline-start: 16px;
     .list_item {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
@@ -55,7 +56,7 @@
       font-size: 16px;
       line-height: 120%;
       letter-spacing: 0.1px;
-      color: #1D1F1D;
+      color: var(--text-default);
     }
   }
 }

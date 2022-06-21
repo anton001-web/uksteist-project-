@@ -28,7 +28,6 @@ const Section6 = () => {
 
     const setSlide = (e) => {
         const slide = parseInt(e.target.dataset.slide)
-
         setCurrent(slide - 1)
     }
 
@@ -41,7 +40,14 @@ const Section6 = () => {
                         <div className={s.section_subTitles}>
                             <ul className={s.section_list}>
                                 {sliderTitles && sliderTitles.map((item, index) => (
-                                    <li data-active={item.data} data-title={item.title} data-slide={item.id} className={s.list_item} onClick={setSlide}>{item.title}</li>
+                                    <li data-title={item.title}
+                                        data-slide={item.id}
+                                        className={s.list_item}
+                                        data-active={index === current ? 'active': 'none'}
+                                        onClick={setSlide}
+                                        key={index}>
+                                        {item.title}
+                                    </li>
                                 ))}
                             </ul>
                         </div>

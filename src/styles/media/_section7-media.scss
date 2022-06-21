@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+  .innerStage_subTitle {
+    display: block;
+  }
+
   .stages {
     flex-direction: column;
   }

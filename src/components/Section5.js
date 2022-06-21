@@ -19,7 +19,7 @@ const Section5 = () => {
                     <div className={s.section_info}>
                         {
                             sectionData && sectionData.map((item, _) => (
-                                <div className={s.sectionInfo_item} data-btn={item.data}>
+                                <div className={s.sectionInfo_item} data-btn={item.data} key={_}>
                                     <p className={s.item_text}>{item.text}</p>
                                     {item.data && (
                                         <button className={s.section_btn}>Участки</button>

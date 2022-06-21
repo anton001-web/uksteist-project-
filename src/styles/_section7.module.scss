@@ -17,7 +17,7 @@ p {
 }
 
 .section_content {
-  padding: 40px;
+  padding: var(--padding-default);
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +25,7 @@ p {
 .sectionTitle_block {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 
   .section_title {
     font-family: 'Montserrat', sans-serif;
@@ -32,7 +33,7 @@ p {
     font-weight: 400;
     font-size: 64px;
     line-height: 78px;
-    color: #1D1F1D;
+    color: var(--text-default);
     margin-block-end: 0;
   }
 
@@ -42,7 +43,7 @@ p {
     font-weight: 500;
     font-size: 22px;
     line-height: 155%;
-    color: #1D1F1D;
+    color: var(--text-default);
   }
 }
 
@@ -110,7 +111,7 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #F8F8F8;
+  color: var(--text-w);
   width: 40px;
   height: 40px;
   background: #314C51;
@@ -150,7 +151,7 @@ p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    color: #1D1F1D;
+    color: var(--text-default);
   }
 }
 
@@ -167,6 +168,22 @@ p {
   &[data-title] {
     top: 77.5px;
   }
+}
+
+.innerStage_subTitle {
+  display: none;
+  position: relative;
+  left: 20px;
+  bottom: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 80%;
+  line-height: 10px;
+  text-align: center;
+  color: #1D1F1D;
+
 }
 
 

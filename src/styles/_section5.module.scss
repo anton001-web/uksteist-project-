@@ -1,5 +1,5 @@
 .section {
-  margin-top: 150px;
+  margin-top: var(--section-m);
 }
 
 .section_container {
@@ -10,7 +10,7 @@
 .section_content {
   display: flex;
   flex-direction: column;
-  padding: 0px 40px 0px 40px;
+  padding: 0px var(--padding-default);
 }
 
 .sectionTitle_block {
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.0703846px;
-  color: #000000;
+  color: var(--text-default);
 }
 
 .section_subTitle {
@@ -36,16 +36,14 @@
   font-size: 22px;
   line-height: 120%;
   letter-spacing: 0.1px;
-  color: #1D1F1D;
+  color: var(--text-default);
 
 }
 
 .section_info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 50px;
-
-
+  column-gap: var(--padding-default);
 }
 
 .sectionInfo_item {
@@ -58,7 +56,7 @@
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0.1px;
-    color: #1D1F1D;
+    color: var(--text-default);
   }
 
   &[data-btn='btn'] {
@@ -68,20 +66,21 @@
   }
 
   .section_btn {
-    background-color: #fff;
+    margin-top: var(--padding-default);
+    background-color: var(--text-w);
     cursor: pointer;
-    width:200px;
+    width: 200px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 90%;
     letter-spacing: 0.0703846px;
-    color: #1D1F1D;
+    color: var(--text-default);
     border-radius: 30px;
     padding: 25px 25px;
     transition: all .4s;
-    border: 1px solid #1D1F1D;
+    border: 1px solid var(--text-default);
 
     &:hover {
       opacity: 80%;

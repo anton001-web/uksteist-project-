@@ -1,4 +1,5 @@
 .section {
+  margin-top: var(--section-m);
 }
 
 
@@ -30,7 +31,7 @@
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.1px;
-  color: #000;
+  color: var(--text-default);
 }
 
 .item_subTitle {
@@ -40,7 +41,7 @@
   font-size: 18px;
   line-height: 120%;
   letter-spacing: 0.1px;
-  color: #000;
+  color: var(--text-default);
 }
 
 ////////
@@ -56,7 +57,7 @@
 
 .seaInfo {
   background: rgba(0, 0, 0, 0.1);
-  border: 1px solid #F8F8F8;
+  border: 1px solid var(--text-w);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -73,7 +74,7 @@
     text-align: center;
     letter-spacing: 0.1px;
     margin: 15px;
-    color: #000;
+    color: var(--text-defaultw);
   }
 }
 
@@ -140,7 +141,7 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 17px;
-      color: #F8F8F8;
+      color: var(--text-w);
     }
 
     .tooltip_list {
@@ -159,7 +160,7 @@
         font-weight: 300;
         font-size: 13px;
         line-height: 15px;
-        color: #F8F8F8;
+        color: var(--text-w);
 
         span {
           margin-left: 20px;
@@ -173,14 +174,14 @@
     .tooltip_btn {
       transition: all .4s ;
       width: 100%;
-      border: 0.5px solid #F8F8F8;
+      border: 0.5px solid var(--text-w);
       border-radius: 15px;
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 12px;
       line-height: 15px;
-      color: #F8F8F8;
+      color: var(--text-w);
       background-color: inherit;
       cursor: pointer;
 

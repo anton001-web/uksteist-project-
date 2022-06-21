@@ -20,7 +20,7 @@
   font-size: 64px;
   line-height: 90%;
   letter-spacing: 0.0703846px;
-  color: #1D1F1D;
+  color: var(--text-default);
 }
 
 .section_list {
@@ -70,7 +70,7 @@
 .slider_controls {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding-left: var(--padding-default);
 
   .slide_title {
     font-family: 'Montserrat', sans-serif;
@@ -79,7 +79,7 @@
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0.1px;
-    color: #1D1F1D;
+    color: var(--text-default);
     margin-block-end: 0;
   }
 
@@ -90,7 +90,7 @@
     font-size: 18px;
     line-height: 120%;
     letter-spacing: 0.1px;
-    color: #1D1F1D;
+    color: var(--text-default);
   }
 }
 
@@ -98,12 +98,21 @@
   opacity: 1;
 }
 
+.slider_btns {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
 .slider_btn {
   border: 1px solid #314C51;
-  margin: 20px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
+  background-color: #fff;
 }
 
 @import './media/_section6-media';

@@ -2,4 +2,31 @@
   .section_content {
     align-items: start;
   }
+
+  .modalImg_block {
+    display: none;
+  }
+
+  .modalTitle_text {
+    font-size: 0.6rem;
+
+    span {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal_footer {
+    margin-top: 6px;
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  .modal_content {
+    grid-template-areas:
+      "text text"
+    "sub sub"
+  ;
+  }
 }
