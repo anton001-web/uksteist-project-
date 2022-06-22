@@ -1,19 +1,13 @@
 @media screen and (max-width: 767px) {
   .sectionSlider_block {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section_content {
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    row-gap: var(--padding-default);
   }
 
   .slider_controls {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 0;
   }
@@ -27,7 +21,7 @@
   }
 
   .sectionSlider_container {
-    width: 100%;
+    grid-row: 2;
   }
 
   .section_title {

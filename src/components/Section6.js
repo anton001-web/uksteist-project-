@@ -71,7 +71,7 @@ const Section6 = () => {
                                 <h1 className={s.slide_title}>{sliderData[current].title}</h1>
                                 <h2 className={s.slide_subTitle}>{sliderData[current].subTitle}</h2>
                                 <div className={s.slider_btns}>
-                                    <button className={s.slider_btn} onClick={prevSlide}>
+                                    <button className={classNames(s.slider_btn, s.slider_prev)} onClick={prevSlide}>
                                         <img src="./assets/images/less.png" alt=""/>
                                     </button>
                                     <button className={s.slider_btn} onClick={nextSlide}>

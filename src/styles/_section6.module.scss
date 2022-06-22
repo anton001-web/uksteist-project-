@@ -47,12 +47,13 @@
 }
 
 .sectionSlider_block {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .sectionSlider_container {
   overflow: hidden;
-  width: 60%;
+  width: 100%;
 }
 
 .slide {
@@ -100,8 +101,10 @@
 
 .slider_btns {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
+
+  .slider_prev {
+    margin-right: 15px;
+  }
 }
 
 .slider_btn {
@@ -113,6 +116,7 @@
   width: 40px;
   height: 40px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 @import './media/_section6-media';

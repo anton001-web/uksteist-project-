@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
 
+
     &.modal_open {
       opacity: 1;
       visibility: visible;
@@ -44,9 +45,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: var(--padding-default);
-  padding: 40px 40px;
-  max-width: 49rem;
-  position: absolute;
+  padding: 20px var(--padding-default);
+  max-width: 45rem;
+
 
   .modal_text {
     font-family: 'Montserrat', sans-serif;
@@ -86,13 +87,14 @@
 }
 
 .modal_close {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background-color: #fff;
   border: none;
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
-  right: 0;
+  right: 10px;
+  top: 5px;
   cursor: pointer;
 }
 

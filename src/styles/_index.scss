@@ -3,5 +3,10 @@
 @import './_fonts.scss';
 
 body {
+  overflow: hidden;
   overflow-y: scroll;
+}
+
+#root {
+  overflow: hidden;
 }

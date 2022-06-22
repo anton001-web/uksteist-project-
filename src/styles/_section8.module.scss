@@ -1,0 +1,87 @@
+.section {
+  margin-top: var(--section-m);
+  background-color: #314C51;
+  background-image: url("../assets/images/team_bg.svg");
+  background-repeat: no-repeat;
+  background-position: left 20% bottom;
+  background-size: 550px;
+  min-height: 100vh;
+}
+
+.section_container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section_content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-default);
+}
+
+.section_header {
+  .section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0703846px;
+    color: var(--text-w);
+  }
+
+  .section_subTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    color: var(--text-w);
+  }
+}
+
+.section_team {
+  margin-top: 150px;
+  display: flex;
+  align-self: end;
+}
+
+.section_list {
+
+}
+
+.sectionTeam_block {
+
+}
+
+.item_text {
+  display: flex;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  color: #bdc3c7;
+
+  .item_subText {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.item_headerText {
+  color: #bdc3c7;
+  padding-right: 7px;
+}
+
+.list_item {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-w);
+}
+
+@import './media/_section8-media';
