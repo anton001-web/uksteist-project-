@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  .sectionFiles_block {
+    grid-template-columns: 1fr;
+  }
+
+  .section_title {
+    font-size: 36px;
+  }
+
+  .section_subTitle {
+    font-size: 18px;
+  }
+}

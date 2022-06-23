@@ -1,4 +1,4 @@
-import {OPEN_MODAL, TOGGLE_BURGER} from "./types";
+import {DOC_MODAL, OPEN_MODAL, TOGGLE_BURGER} from "./types";
 
 export const toggleBurger = () => {
     return {
@@ -9,5 +9,11 @@ export const toggleBurger = () => {
 export const openModal = () => {
     return {
         type: OPEN_MODAL
+    }
+}
+
+export const docModal = () => {
+    return {
+        type: DOC_MODAL
     }
 }

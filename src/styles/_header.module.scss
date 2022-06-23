@@ -7,7 +7,7 @@
 .header_container {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 1440px;
+  max-width: var(--sec-container);
   margin: 0 auto;
   padding: 0px 40px;
 }

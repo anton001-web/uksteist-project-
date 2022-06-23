@@ -1,5 +1,3 @@
-
-
 .section {
   margin-top: var(--section-m);
   height: 650px;
@@ -133,7 +131,7 @@
 }
 
 .section_container {
-  max-width: 1440px;
+  max-width: var(--sec-container);
   margin: 0 auto;
   height: 100%;
   padding: 0px var(--padding-default);

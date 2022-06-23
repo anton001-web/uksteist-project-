@@ -4,7 +4,7 @@
 
 .section_container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: var(--sec-container);
   padding: var(--padding-default);
 }
 
