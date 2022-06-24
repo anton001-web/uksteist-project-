@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  .section_content {
+    grid-template-columns: 1fr;
+  }
+
+  .section_titleHidden {
+    display: block;
+  }
+
+  .section_title {
+    display: none;
+  }
+}

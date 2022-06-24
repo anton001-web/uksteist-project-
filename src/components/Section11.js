@@ -12,7 +12,7 @@ const Section11 = () => {
                 </div>
             </div>
             <div className={s.videoBlock}>
-                <video className={s.video} src="./assets/images/forest.mp4" autoPlay loop muted></video>
+                <video className={s.video} src="./assets/images/forest.mp4" autoPlay loop muted preload='auto'></video>
             </div>
         </section>
     )

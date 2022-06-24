@@ -1,6 +1,31 @@
 @import './variables';
 @import '~normalize.css/normalize.css';
-@import './_fonts.scss';
+//@import './_fonts.scss';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../assets/fonts/Montserrat-Light.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
 
 body {
   overflow: hidden;

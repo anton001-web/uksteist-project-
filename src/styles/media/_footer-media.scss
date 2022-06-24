@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  .footer_content {
+    grid-template-columns: 1fr;
+    row-gap: var(--padding-default);
+  }
+
+  .grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_icons {
+    justify-content: space-between;
+  }
+}
