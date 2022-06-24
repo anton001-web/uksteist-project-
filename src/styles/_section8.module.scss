@@ -20,27 +20,29 @@
 }
 
 .section_header {
-  .section_title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 90%;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.0703846px;
-    color: var(--text-w);
-  }
 
-  .section_subTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 120%;
-    letter-spacing: 0.1px;
-    color: var(--text-w);
-  }
+}
+
+.section_title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 90%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0703846px;
+  color: var(--text-w);
+}
+
+.section_subTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0.1px;
+  color: var(--text-w);
 }
 
 .section_team {
@@ -66,11 +68,11 @@
   line-height: 120%;
   letter-spacing: 0.1px;
   color: #bdc3c7;
+}
 
-  .item_subText {
-    font-size: 20px;
-    color: #fff;
-  }
+.item_subText {
+  font-size: 20px;
+  color: #fff;
 }
 
 .item_headerText {

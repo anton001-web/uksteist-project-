@@ -27,24 +27,25 @@ p {
   flex-direction: column;
   padding-bottom: 40px;
 
-  .section_title {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 78px;
-    color: var(--text-default);
-    margin-block-end: 0;
-  }
+}
 
-  .section_subTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 155%;
-    color: var(--text-default);
-  }
+.section_title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  color: var(--text-default);
+  margin-block-end: 0;
+}
+
+.section_subTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 155%;
+  color: var(--text-default);
 }
 
 .stages {
